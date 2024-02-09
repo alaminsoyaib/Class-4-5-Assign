@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> screens = [
     const HomeScreen(),
     const MenuScreen(),
-    const ProfileScreen(),
+    ProfileScreen(),
   ];
 
   void onTapped(int index) {
