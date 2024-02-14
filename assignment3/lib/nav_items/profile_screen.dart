@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class ProfileScreen extends StatefulWidget {
-  ProfileScreen({super.key});
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -27,22 +27,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
             children: [
               Text(
                 'controller: ${nameController.text}',
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Text(
-                'var data: ${name}',
-                style: TextStyle(
+                'var data: $name',
+                style: const TextStyle(
                   color: Colors.black,
                   fontSize: 20,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
@@ -51,7 +51,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   controller: nameController,
                   obscureText: false,
                   keyboardType: TextInputType.text,
-                  prefixIcon: Icon(Icons.mail),
+                  prefixIcon: const Icon(Icons.mail),
                   prefixIconColor: Colors.black,
                   hintText: 'Enter your mail address',
                   validator: (value) {
@@ -62,7 +62,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
@@ -71,7 +71,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   controller: nameController,
                   obscureText: false,
                   keyboardType: TextInputType.number,
-                  prefixIcon: Icon(Icons.call),
+                  prefixIcon: const Icon(Icons.call),
                   prefixIconColor: Colors.black,
                   hintText: 'Enter your phone number',
                   validator: (value) {
@@ -82,7 +82,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
@@ -91,7 +91,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   controller: nameController,
                   obscureText: true,
                   keyboardType: TextInputType.text,
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: const Icon(Icons.password),
                   prefixIconColor: Colors.black,
                   hintText: 'Minimum 8 digit Password',
                   validator: (value) {
@@ -102,7 +102,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   },
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               InkWell(
